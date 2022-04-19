@@ -12,5 +12,11 @@ pipeline {
         sh 'mvn clean test'
       }
     }
+    stage ('Build') {
+      steps {
+        echo 'building in progress...'
+        sh 'mvn clean compile assembly:single'
+      }
+    }
   }
 }
