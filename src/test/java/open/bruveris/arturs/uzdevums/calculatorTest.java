@@ -1,3 +1,4 @@
+package open.bruveris.arturs.uzdevums;
 import org.junit.Assert;
 import org.junit.Test;
 

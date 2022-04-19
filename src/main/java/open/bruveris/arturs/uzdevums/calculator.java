@@ -1,3 +1,4 @@
+package open.bruveris.arturs.uzdevums;
 import java.util.Scanner;
 
 public class calculator {
