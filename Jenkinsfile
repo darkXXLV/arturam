@@ -1,15 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Git Pull') {
       steps {
-        echo 'build in progress...'
-        javac calculator.java
+        git branch: "main", url: "https://github.com/darkXXLV/arturam"
       }
     }
     stage ('Test') {
       steps {
         echo 'testing in progress...'
+        sh 'mvn clean test'
       }
     }
   }
