@@ -9,7 +9,7 @@ pipeline {
     stage ('Test') {
       steps {
         echo 'testing in progress...'
-        sh 'mvn clean test -source 14'
+        sh 'mvn clean test'
       }
     }
   }
